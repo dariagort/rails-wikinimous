@@ -1,0 +1,7 @@
+<h2>List of Articles</h2>
+<ol>
+  <% Article.all.each do |article| %>
+    <li><%= link_to article.title.capitalize, article_path %></li>
+    <li><%= article.content %></li>
+  <% end %>
+</ol>
